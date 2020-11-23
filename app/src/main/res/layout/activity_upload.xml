@@ -7,8 +7,24 @@
     tools:context=".upload" android:orientation="vertical"
     android:gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/u_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"/>
+
+   <Button
+
+       android:id="@+id/btn_chose"
+       android:layout_width="250dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:text="chose image"
+       android:onClick="selectImage"/>
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Signup Activity"/>
+        android:layout_marginTop="20dp"
+        android:text="Upload image"/>
 </LinearLayout>
