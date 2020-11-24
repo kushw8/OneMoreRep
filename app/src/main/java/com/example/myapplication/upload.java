@@ -66,7 +66,7 @@ public class upload extends AppCompatActivity {
 
             objectIntent.setAction(Intent.ACTION_GET_CONTENT);
             startActivityForResult(objectIntent,IMAGE_REQUEST);
-            
+
 
     }
 
@@ -164,6 +164,13 @@ public class upload extends AppCompatActivity {
             Toast.makeText(this,e.getMessage(),Toast.LENGTH_SHORT).show();
         }
         return null;
+    }
+
+
+    public void moveTo(View view){
+
+        startActivity(new Intent(this,submit.class));
+
     }
 
 
