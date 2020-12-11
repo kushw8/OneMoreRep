@@ -11,6 +11,13 @@ public class Post {
     @SerializedName("body")
     private String description;
 
+
+    public Post(int userId, String title, String description) {
+        this.userId = userId;
+        this.title = title;
+        this.description = description;
+    }
+
     public int getUserId() {
         return userId;
     }
