@@ -51,7 +51,13 @@
     <Button
         android:id="@+id/btn_retro"
         android:layout_height="wrap_content"
-        android:text="Retrofit"
+        android:text="Retrofit Get"
+        android:layout_width="250dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_retro2"
+        android:layout_height="wrap_content"
+        android:text="Retrofit Post"
         android:layout_width="250dp"
         android:layout_marginTop="20dp"/>
 
