@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity{
     EditText M_description;
     Button btn_submit;
     Button btn_next;
+    Button btn_retro;
 
     FirebaseFirestore db;
 
@@ -38,12 +39,20 @@ public class MainActivity extends AppCompatActivity{
         M_description = findViewById(R.id.main_description);
         btn_submit=findViewById(R.id.btn_submit);
         btn_next=findViewById(R.id.btn_next);
+        btn_retro=findViewById(R.id.btn_retro);
 
         db = FirebaseFirestore.getInstance();
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
               move();
+            }
+        });
+
+        btn_retro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                moveto();
             }
         });
 
@@ -61,6 +70,10 @@ public class MainActivity extends AppCompatActivity{
         });
 
 
+    }
+    public void moveto(){
+        Intent intent =new Intent(getApplicationContext(),RetroGET.class);
+        startActivity(intent);
     }
 
     public void move(){
@@ -86,7 +99,7 @@ public class MainActivity extends AppCompatActivity{
                     }
                 });
 
-
-
 }
+
+
 }
